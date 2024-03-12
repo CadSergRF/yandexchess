@@ -30,9 +30,20 @@
 }
 
 .running-line__text {
+  margin: 0 30px;
   text-transform: uppercase;
   color: var(--color-white);
   font: 400 22px/24.2px 'Merriweather';
+  position: relative;
+}
+
+.running-line__text::before {
+  position: absolute;
+  top: -5px;
+  left: -30px;
+  height: 100%;
+  content: url(../images/icon-white-dot.svg);
+  z-index: 2;
 }
 
 .running-line__dot {
