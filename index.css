@@ -1,0 +1,30 @@
+@import url(./vendor/fonts/font.css);
+
+@import url(./classes/header.css);
+@import url(./classes/running-line.css);
+
+:root {
+  --color-text-main: #313131;
+  --color-alm-black: #1f1f1f;
+  --color-alm-red: #f54932;
+  --color-bg-main: #e9ded4;
+  --color-white: #fff;
+  --color-sun: #fbce51;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.align-right {
+  text-align: right;
+}

@@ -1,0 +1,40 @@
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.running-line {
+  overflow: hidden;
+  padding: 19px 0;
+  background: var(--color-alm-red);
+  white-space: nowrap;
+  position: relative;
+}
+
+.running-line:before,
+.running-line:after {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  content: '';
+  z-index: 2;
+}
+
+.running-line__slide {
+  display: inline-flex;
+  animation: 35s slide infinite linear;
+}
+
+.running-line__text {
+  text-transform: uppercase;
+  color: var(--color-white);
+  font: 400 22px/24.2px 'Merriweather';
+}
+
+.running-line__dot {
+  margin: 0 12px;
+}

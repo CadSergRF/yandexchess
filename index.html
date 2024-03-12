@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Клуб четырех коней</title>
+  <link rel="icon" href="./images/icon-logo.svg">
+  <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+  <div class="page">
+    <header class="header">
+      <section class="header__wrapper">
+        <img class="header__logo" src="/images/icon-logo-full.svg" alt="Логотип Клуб четырех коней" />
+        <!-- Блок с основным слоганом -->
+        <article class="header__content">
+          <h2 class="header__slogan">
+            Превратите уездный город
+          </h2>
+          <h2 class="header__slogan align-center">в столицу</h2>
+          <h2 class="header__slogan align-right">земного шара</h2>
+          <p class="header__text align-center">Оплатите взнос на телеграммы для организации
+            Международного васюкинского турнира по
+            шахматам</p>
+        </article>
+        <!-- Блок с кнопками -->
+        <div class="header__buttons">
+          <button class="header__btn header__btn-donate">
+            <p class="header__btn-text">Поддержать</p>
+            <p class="header__btn-text">шахматную мысль</p>
+          </button>
+          <button class="header__btn header__btn-detail">
+            <p class="header__btn-text">Подробнее</p>
+            <p class="header__btn-text">о турнире</p>
+          </button>
+        </div>
+        <!-- Блок картинок -->
+        <div class="header__image header__image-sun-wrapper">
+          <img class="header__image-sun-text" src="./images/header/sun-text-full.svg" alt="">
+        </div>
+        <img class="header__image header__image-chess_king" src="./images/header/chess-king.svg" alt="">
+        <img class="header__image header__image-chess_queen" src="./images/header/chess-queen.svg" alt="">
+        <img class="header__image header__image-city_around" src="./images/header/city-arround.svg" alt="">
+        <img class="header__image header__image-city" src="./images/header/city.svg" alt="">
+        <img class="header__image header__image-chess_horse" src="./images/header/chess-horse.svg" alt="">
+        <img class="header__image header__image-chess_pawn" src="./images/header/chess-pawn.svg" alt="">
+
+      </section>
+    </header>
+
+    <main class=" content">
+      <div class="running-line">
+        <div class="running-line__slide">
+          <p class="running-line__text">&nbsp;Дело помощи утопающим — дело рук самих утопающих!&nbsp;</p>
+          <img class="running-line__dot" src="./images/icon-white-dot.svg" alt="" />
+          <p class="running-line__text">&nbsp;Шахматы двигают вперед не только культуру, но и экономику!&nbsp;</p>
+          <img class="running-line__dot" src="./images/icon-white-dot.svg" alt="" />
+          <p class="running-line__text">&nbsp;Лед тронулся, господа присяжные заседатели!&nbsp;
+          </p>
+          <img class="running-line__dot" src="./images/icon-white-dot.svg" alt="" />
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+    </footer>
+  </div>
+
+  <script>
+    var copy = document.querySelector(".running-line__slide").cloneNode(true);
+    document.querySelector(".running-line").appendChild(copy);
+  </script>
+</body>
+
+</html>
