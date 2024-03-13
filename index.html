@@ -147,18 +147,39 @@
             </li>
           </ol>
         </section>
-      </section>
+        <!-- Блок участники -->
+        <section class="players">
+          <div class="carousel">
+            <div class="carousel-counter">
+              <button class="carousel__btn carousel__btn-less"></button>
+              <button class="carousel__btn"></button>
+            </div>
 
+          </div>
+        </section>
+
+      </section>
+      <!-- Бегущая строка -->
+      <div class="running-line">
+        <div class="running-line__slide">
+          <p class="running-line__text">&nbsp;Дело помощи утопающим — дело рук самих утопающих!&nbsp;</p>
+          <p class="running-line__text">&nbsp;Шахматы двигают вперед не только культуру, но и экономику!&nbsp;</p>
+          <p class="running-line__text">&nbsp;Лед тронулся, господа присяжные заседатели!&nbsp;
+          </p>
+        </div>
+      </div>
     </main>
 
     <footer class="footer">
+      <p class="footer__text">
+        Все персонажи, события и цитаты являются вымышленными и не принадлежат создателям сайта. С подробностями можно
+        познакомиться в главе XXXIV романа Ильи Ильфа и Евгения Петрова «Двенадцать стульев».
+      </p>
     </footer>
   </div>
 
-  <script>
-    var copy = document.querySelector(".running-line__slide").cloneNode(true);
-    document.querySelector(".running-line").appendChild(copy);
-  </script>
+  <script type="module" src="./scripts/runnig-line.js"></script>
+  <script type="module" src="./scripts/players-slider.js"></script>
 </body>
 
 </html>

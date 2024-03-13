@@ -5,6 +5,8 @@
 @import url(./classes/donate-theme.css);
 @import url(./classes/schedule.css);
 @import url(./classes/dream.css);
+@import url(./classes/players.css);
+@import url(./classes/footer.css);
 
 :root {
   --color-text-main: #313131;
@@ -15,7 +17,9 @@
   --color-sun: #fbce51;
   --color-border: #d0d0d0;
   --color-footnotes: #3057a2;
+  --color-disabled: #d6d6d6;
 }
+
 * {
   margin: 0;
   padding: 0;

@@ -1,0 +1,20 @@
+.carousel__btn {
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 50%;
+  background: var(--color-text-main) url(../images/btn-right.svg) center no-repeat;
+  cursor: pointer;
+}
+
+.carousel__btn:hover {
+  background-color: var(--color-sun);
+}
+
+.carousel__btn:disabled {
+  background-color: var(--color-disabled);
+}
+
+.carousel__btn-less {
+  transform: rotate(180deg);
+}

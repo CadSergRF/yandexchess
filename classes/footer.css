@@ -1,0 +1,11 @@
+.footer {
+  width: 100vw;
+  min-width: 1624px;
+  padding: 40px 72px 72px;
+  background-color: var(--color-bg-main);
+}
+
+.footer__text {
+  color: var(--color-text-main);
+  font: 400 16px/19px 'Golos Text';
+}
