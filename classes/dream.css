@@ -1,0 +1,87 @@
+.dream {
+  width: 100%;
+}
+
+.dream__title {
+  margin-bottom: 54px;
+  max-width: 800px;
+  color: var(--color-text-main);
+  text-transform: uppercase;
+  font: 400 54px/65px 'Merriweather';
+}
+
+.dream__title_add {
+  display: inline-block;
+  width: 280px;
+  color: var(--color-footnotes);
+  text-transform: none;
+  font: 400 20px/24px 'Golos Text';
+}
+
+.dream__list {
+  list-style-type: none;
+  counter-reset: num;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    'one two three'
+    'four five three'
+    'six seven seven';
+}
+
+.dream__list-item {
+  position: relative;
+  padding: 20px 20px 20px 72px;
+  font: 500 20px/24px 'Golos Text';
+  background-image: url(../images/header/background.svg);
+  background-color: var(--color-bg-main);
+  background-blend-mode: color-burn;
+}
+
+.dream__area-item1 {
+  grid-area: one;
+}
+
+.dream__area-item2 {
+  grid-area: two;
+}
+
+.dream__area-item3 {
+  grid-area: three;
+}
+
+.dream__area-item4 {
+  grid-area: four;
+}
+
+.dream__area-item5 {
+  grid-area: five;
+}
+
+.dream__area-item6 {
+  grid-area: six;
+}
+
+.dream__area-item7 {
+  grid-area: seven;
+}
+
+.dream__list-item:before {
+  content: counter(num);
+  counter-increment: num;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 16px;
+  left: 18px;
+  width: 36px;
+  height: 36px;
+  background: var(--color-white);
+  color: var(--color-text-main);
+  text-align: center;
+  font: 600 20px/24px 'Golos Text';
+  border-radius: 50%;
+  border: none;
+}

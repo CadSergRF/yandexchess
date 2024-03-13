@@ -4,6 +4,7 @@
 @import url(./classes/running-line.css);
 @import url(./classes/donate-theme.css);
 @import url(./classes/schedule.css);
+@import url(./classes/dream.css);
 
 :root {
   --color-text-main: #313131;
