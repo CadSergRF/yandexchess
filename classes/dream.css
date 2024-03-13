@@ -1,5 +1,6 @@
 .dream {
   width: 100%;
+  margin-bottom: 200px;
 }
 
 .dream__title {
@@ -33,10 +34,18 @@
 .dream__list-item {
   position: relative;
   padding: 20px 20px 20px 72px;
-  font: 500 20px/24px 'Golos Text';
   background-image: url(../images/header/background.svg);
   background-color: var(--color-bg-main);
   background-blend-mode: color-burn;
+}
+
+.dream__list-item-text {
+  color: var(--color-text-main);
+  font: 500 20px/24px 'Golos Text';
+}
+
+.dream__list-item-text_max-width {
+  max-width: 440px;
 }
 
 .dream__area-item1 {
@@ -65,6 +74,7 @@
 
 .dream__area-item7 {
   grid-area: seven;
+  position: relative;
 }
 
 .dream__list-item:before {
@@ -84,4 +94,10 @@
   font: 600 20px/24px 'Golos Text';
   border-radius: 50%;
   border: none;
+}
+
+.dream__list-image {
+  position: absolute;
+  bottom: 0;
+  right: -60px;
 }
