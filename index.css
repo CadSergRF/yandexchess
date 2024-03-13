@@ -2,6 +2,8 @@
 
 @import url(./classes/header.css);
 @import url(./classes/running-line.css);
+@import url(./classes/donate-theme.css);
+@import url(./classes/schedule.css);
 
 :root {
   --color-text-main: #313131;
@@ -10,6 +12,8 @@
   --color-bg-main: #e9ded4;
   --color-white: #fff;
   --color-sun: #fbce51;
+  --color-border: #d0d0d0;
+  --color-footnotes: #3057a2;
 }
 * {
   margin: 0;
@@ -27,4 +31,14 @@
 
 .align-right {
   text-align: right;
+}
+
+.content {
+  width: 1623.5px;
+}
+
+.main__content {
+  margin: 80px 0 50px;
+  padding: 0 72px;
+  width: 1623.5px;
 }

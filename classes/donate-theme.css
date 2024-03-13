@@ -1,0 +1,23 @@
+.donate-theme {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 64px;
+}
+
+.donate-theme__slogan {
+  max-width: 764px;
+  text-transform: uppercase;
+  color: var(--color-text-main);
+  font: 700 36px/48px 'Merriweather';
+}
+
+.donate-theme__slogan_red {
+  color: var(--color-alm-red);
+}
+
+.donate-theme__image {
+  border-radius: 50%;
+  width: 394px;
+  object-fit: contain;
+}

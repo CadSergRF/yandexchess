@@ -1,0 +1,67 @@
+.schedule {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.schedule__image {
+  width: 609px;
+}
+
+.schedule__article {
+  width: 704px;
+  padding-top: 10px;
+}
+
+.schedule__title {
+  width: 680px;
+  margin-bottom: 46px;
+  padding-top: 20px;
+  text-transform: uppercase;
+  color: var(--color-text-main);
+  font: 700 36px/48px 'Merriweather';
+}
+
+.schedule__title_red {
+  color: var(--color-alm-red);
+}
+
+.schedule__table {
+  width: 704px;
+  margin-bottom: 33px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: var(--color-text-main);
+  font: 400 20px/24px 'Golos Text';
+}
+
+.schedule__table-text {
+  padding: 15px 0;
+  border-bottom: 2px solid var(--color-border);
+  color: var(--color-text-main);
+  font: 400 20px/24px 'Golos Text';
+}
+
+.schedule__table-text_line-though {
+  text-decoration: line-through 2px var(--color-alm-red);
+  margin-right: 14px;
+}
+
+.schedule__table-text:nth-child(2n) {
+  padding-left: 16px;
+  border-left: 2px solid var(--color-border);
+  font-weight: 600;
+}
+
+.schedule__table-text:nth-last-child(1) {
+  border-bottom: none;
+}
+
+.schedule__table-text:nth-last-child(2) {
+  border-bottom: none;
+}
+
+.schedule__footnotes {
+  color: var(--color-footnotes);
+  font: 400 20px/24px 'Golos Text';
+}
