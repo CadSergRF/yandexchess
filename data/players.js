@@ -38,9 +38,4 @@ export const players = [
     name: 'Эммануил Ласкер',
     title: 'Чемпион мира по шахматам'
   },
-  {
-    img: './images/player.svg',
-    name: 'Александр Алехин',
-    title: 'Чемпион мира по шахматам'
-  },
 ]

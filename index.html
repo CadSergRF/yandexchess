@@ -40,13 +40,7 @@
         <div class="header__image header__image-sun-wrapper">
           <img class="header__image-sun-text" src="./images/header/sun-text-full.svg" alt="">
         </div>
-        <img class="header__image header__image-chess_king" src="./images/header/chess-king.svg" alt="">
-        <img class="header__image header__image-chess_queen" src="./images/header/chess-queen.svg" alt="">
-        <img class="header__image header__image-city_around" src="./images/header/city-arround.svg" alt="">
-        <img class="header__image header__image-city" src="./images/header/city.svg" alt="">
-        <img class="header__image header__image-chess_horse" src="./images/header/chess-horse.svg" alt="">
-        <img class="header__image header__image-chess_pawn" src="./images/header/chess-pawn.svg" alt="">
-
+        <img class="header__image header__image-city" src="./images/header/bg-city.png" alt="">
       </section>
     </header>
 
@@ -72,7 +66,7 @@
         </article>
         <!-- Блок график проведения турнира -->
         <section class="schedule">
-          <img class="schedule__image" src="./images/chess-grandmaster.svg" alt="Гроссмейстер" />
+          <img class="schedule__image" src="./images/chess-grandmaster.png" alt="Гроссмейстер" />
           <article class="schedule__article">
             <h2 class="schedule__title">
               и Сеанс <span class="schedule__title_red">одновременной игры в шахматы на 160 досках</span>
@@ -149,12 +143,18 @@
         </section>
         <!-- Блок участники -->
         <section class="players">
+          <h2 class="players__title">
+            Участники турнира
+          </h2>
           <div class="carousel">
+            <!-- Кнопки и табло управления каруселью)) -->
             <div class="carousel-counter">
               <button class="carousel__btn carousel__btn-less"></button>
-              <p class="carousel-counter__text currentCountCards"></p>
-              <p class="carousel-counter__text opacity-eight">/</p>
-              <p class="carousel-counter__text maxCountCards opacity-eight"></p>
+              <div>
+                <p class="carousel-counter__text currentCountCards"></p>
+                <p class="carousel-counter__text opacity-eight">/</p>
+                <p class="carousel-counter__text maxCountCards opacity-eight"></p>
+              </div>
               <button class="carousel__btn carousel__btn-more"></button>
             </div>
             <!-- Карусель участников -->
@@ -165,7 +165,6 @@
             </div>
           </div>
         </section>
-
       </section>
       <!-- Бегущая строка -->
       <div class="running-line">

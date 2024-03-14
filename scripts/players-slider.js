@@ -52,13 +52,17 @@ const chunkPlayers = players.reduce((resultArray, item, index) => {
 // и строим элемент
 chunkPlayers.map((item) => {
   const element = playersBlockTemplateElement.querySelector('.players-block__item').cloneNode(true);
+  // в него добавляем игроков
   const playersList = element.querySelector('.players-block__list');
-
+  // Подгоняем ширину по обертку
   element.style.minWidth = `${wrapperWidth}px`;
+  // Устанавливаем кол-во блоков Грида
+  playersList.style.gridTemplateColumns = `repeat(${item.length}, 1fr)`
 
   item.map((elem) => {
     playersList.appendChild(createPlayer(elem));
   })
+
   carousel.appendChild(element);
 })
 
