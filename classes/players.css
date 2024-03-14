@@ -1,3 +1,12 @@
+.carousel-counter {
+  display: flex;
+}
+
+.carousel-counter__text {
+  color: var(--color-text-main);
+  font: 400 16px/19px 'Golos Text';
+}
+
 .carousel__btn {
   width: 44px;
   height: 44px;
@@ -27,6 +36,8 @@
 .carousel__players {
   display: flex;
   list-style: none;
+  width: max-content;
+  transition: all 1s ease-in-out;
 }
 
 .players-block__list {

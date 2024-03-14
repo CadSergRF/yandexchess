@@ -38,6 +38,10 @@
   text-align: right;
 }
 
+.opacity-eight {
+  opacity: 0.8;
+}
+
 .content {
   width: 1623.5px;
 }

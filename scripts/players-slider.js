@@ -63,6 +63,51 @@ chunkPlayers.map((item) => {
 })
 
 // КНОПКИ УПРАВЛЕНИЯ КАРУСЕЛЬЮ
-const lessBtn = document.querySelector('.carousel__btn-less');
-const moreBtn = document.querySelector('.carousel__btn-more');
-let count = cardsViewed;
+const lessBtnElem = document.querySelector('.carousel__btn-less');
+const moreBtnElem = document.querySelector('.carousel__btn-more');
+const currentCountCardsElem = document.querySelector('.currentCountCards');
+const maxCountCardsElem = document.querySelector('.maxCountCards');
+maxCountCardsElem.textContent = players.length;
+currentCountCardsElem.textContent = cardsViewed;
+let numCardsDiv = 1;
+lessBtnElem.disabled = true;
+
+let oneDivPercent = 100 / countDivCards;
+
+moreBtnElem.onclick = function () {
+  if (numCardsDiv < countDivCards) {
+    numCardsDiv++;
+    lessBtnElem.disabled = false;
+    // Сдвигаем карусель
+    carousel.style.transform = `translateX(-${oneDivPercent * (numCardsDiv - 1)}%)`;
+
+    if (numCardsDiv === countDivCards) {
+      currentCountCardsElem.textContent = `${players.length}`;
+      moreBtnElem.disabled = true;
+      return;
+    }
+
+    currentCountCardsElem.textContent = `${numCardsDiv * cardsViewed}`;
+  }
+}
+
+lessBtnElem.onclick = function () {
+  if (numCardsDiv >= 2) {
+    numCardsDiv--;
+    moreBtnElem.disabled = false;
+
+    if (numCardsDiv === 1) {
+      lessBtnElem.disabled = true;
+      currentCountCardsElem.textContent = `${cardsViewed}`;
+      // ЕСЛИ ПЕРВЫЙ ЭЛЕМЕНТ ТО НЕ СДВИГАЕМ
+      carousel.style.transform = 'translateX(-0%)';
+      return;
+    }
+
+    // Сдвигаем карусель
+    carousel.style.transform = `translateX(-${oneDivPercent * (numCardsDiv - 1)}%)`;
+    currentCountCardsElem.textContent = `${numCardsDiv * cardsViewed}`;
+  }
+}
+
+
