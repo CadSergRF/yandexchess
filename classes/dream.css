@@ -1,6 +1,7 @@
 .dream {
   width: 100%;
   margin-bottom: 200px;
+  position: relative;
 }
 
 .dream__title {
@@ -36,7 +37,7 @@
   position: relative;
   min-height: 112px;
   padding: 20px 20px 20px 72px;
-  background-image: url(../images/header/background.svg);
+  background-image: url(../images/header/background.png);
   background-color: var(--color-bg-main);
   background-blend-mode: color-burn;
 }
@@ -101,5 +102,88 @@
 .dream__list-image {
   position: absolute;
   bottom: 0;
-  right: -60px;
+  left: -60px;
+}
+
+@media screen and (max-width: 375px) {
+  .dream {
+    width: 100%;
+    margin-bottom: 120px;
+  }
+
+  .dream__title {
+    margin-bottom: 148px;
+    max-width: 100%;
+    font: 400 36px/39px 'Merriweather';
+  }
+
+  .dream__title_add {
+    display: inline-block;
+    width: 100%;
+    padding-top: 12px;
+    padding-left: 0;
+    font: 400 18px/22px 'Golos Text';
+  }
+
+  .dream__list-wrapper {
+    width: 335px;
+    overflow: hidden;
+  }
+
+  .dream__list {
+    list-style-type: none;
+    counter-reset: num;
+    display: grid;
+    width: 1752px;
+    gap: 0 38px;
+    grid-template-columns: repeat(5, 320px);
+    grid-template-areas:
+      'one three four six seven'
+      'two three five six seven';
+  }
+
+  .dream__list-item {
+    position: relative;
+    min-height: 112px;
+    padding: 20px 20px 20px 72px;
+    background-image: url(../images/header/background.png);
+    background-color: var(--color-bg-main);
+    background-blend-mode: color-burn;
+  }
+
+  .dream__list-item-text {
+    color: var(--color-text-main);
+    font: 500 18px/21px 'Golos Text';
+  }
+
+  .dream__list-item-text_max-width {
+    max-width: 440px;
+  }
+
+  .dream__list-item:before {
+    content: counter(num);
+    counter-increment: num;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 16px;
+    left: 18px;
+    width: 36px;
+    height: 36px;
+    background: var(--color-white);
+    color: var(--color-text-main);
+    text-align: center;
+    font: 600 20px/24px 'Golos Text';
+    border-radius: 50%;
+    border: none;
+  }
+
+  .dream__list-image {
+    width: 335px;
+    height: 182px;
+    bottom: 233px;
+    left: 10px;
+    z-index: 10;
+  }
 }

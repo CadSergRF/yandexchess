@@ -107,3 +107,97 @@
   color: var(--color-footnotes);
   font: 500 16kpx/19px 'Golos Text';
 }
+
+@media screen and (max-width: 375px) {
+  .players {
+    margin-bottom: 176px;
+  }
+
+  .players__title {
+    font: 400 36px/39px 'Merriweather';
+    margin-bottom: 40px;
+  }
+
+  .carousel {
+    position: relative;
+  }
+
+  .carousel-counter {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    position: absolute;
+    top: 430px;
+    right: 80px;
+  }
+
+  .carousel-counter__text {
+    display: inline-flex;
+    color: var(--color-text-main);
+    font: 400 16px/19px 'Golos Text';
+    margin-left: 1px;
+    margin-right: 1px;
+  }
+
+  .carousel__btn {
+    width: 44px;
+    height: 44px;
+    border: none;
+    border-radius: 50%;
+    background: var(--color-text-main) url(../images/btn-right.svg) center no-repeat;
+    cursor: pointer;
+  }
+
+  .carousel__btn:hover {
+    background-color: var(--color-sun);
+  }
+
+  .carousel__btn:disabled {
+    background-color: var(--color-disabled);
+  }
+
+  .carousel__btn-less {
+    transform: rotate(180deg);
+  }
+
+  .carousel__wrapper {
+    width: 335px;
+    overflow: hidden;
+  }
+
+  .carousel__players {
+    display: flex;
+    list-style: none;
+    width: max-content;
+    transition: all 1s ease-in-out;
+  }
+
+  .players-block__list {
+    list-style: none;
+    display: grid;
+    justify-items: center;
+  }
+
+  .player {
+    width: 300px;
+    height: 388px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .player__image {
+    width: 244px;
+    height: 244px;
+  }
+
+  .player__btn {
+    width: 113px;
+    height: 35px;
+    background-color: transparent;
+    border: 1px solid var(--color-footnotes);
+    border-radius: 62px;
+    color: var(--color-footnotes);
+    font: 500 16kpx/19px 'Golos Text';
+  }
+}

@@ -83,3 +83,80 @@
     width: 609px;
   }
 }
+
+@media screen and (max-width: 375px) {
+  .schedule {
+    gap: 16px;
+    flex-direction: column;
+    margin-bottom: 120px;
+  }
+
+  .schedule__image-wrapper {
+    position: relative;
+    min-width: 100%;
+    min-height: 400px;
+  }
+  .schedule__image {
+    max-width: 366px;
+    position: absolute;
+    top: 0;
+    left: -28px;
+  }
+
+  .schedule__article {
+    width: 100%;
+  }
+
+  .schedule__title {
+    width: 334px;
+    margin-bottom: 44px;
+    font: 400 28px/39px 'Merriweather';
+  }
+
+  .schedule__table {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .schedule__table-text {
+    padding: 0;
+    border: none;
+  }
+
+  .schedule__table-text_line-though {
+    text-decoration: line-through 2px var(--color-alm-red);
+    margin-right: 6px;
+  }
+
+  .schedule__table-text:nth-child(2n) {
+    padding: 12px 0 16px;
+    border: none;
+    border-bottom: 2px solid var(--color-border);
+  }
+
+  .schedule__table-text:nth-child(8) {
+    position: absolute;
+    bottom: 95px;
+    right: 103px;
+    border: none;
+  }
+
+  .schedule__table-text:nth-child(7) {
+    padding-bottom: 16px;
+  }
+
+  .schedule__table-text:nth-child(9) {
+    border-top: 2px solid var(--color-border);
+  }
+
+  .schedule__table-text:nth-child(odd) {
+    padding-top: 16px;
+  }
+
+  .schedule__footnotes {
+    color: var(--color-footnotes);
+    font: 400 20px/24px 'Golos Text';
+  }
+}

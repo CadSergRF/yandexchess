@@ -17,9 +17,14 @@
 }
 
 .donate-theme__image {
+  display: block;
   border-radius: 50%;
   width: 394px;
   object-fit: contain;
+}
+
+.donate-theme__image-int {
+  display: none;
 }
 
 @media screen and (max-width: 1366px) {
@@ -38,10 +43,15 @@
 
 @media screen and (max-width: 375px) {
   .donate-theme__image-int {
+    display: block;
     border-radius: 50%;
-    width: 335px;
+    width: 320px;
     margin: 24px 0;
     object-fit: contain;
+  }
+
+  .donate-theme__image {
+    display: none;
   }
 
   .donate-theme__slogan {

@@ -28,7 +28,13 @@ const createPlayer = (card) => {
 // Ширина обертки карусели
 let wrapperWidth = wrapper.clientWidth;
 // Ширина карточки участника
-let cardWidth = 394;
+let cardWidth
+if (window.screen.width < 450) {
+  cardWidth = 394;
+} else {
+  cardWidth = 300;
+}
+
 // let cardWidth = document.querySelector('.players__item').clientWidth
 // Сколько целых карточек поместится в обертку
 let cardsViewed = Math.trunc(wrapperWidth / cardWidth);

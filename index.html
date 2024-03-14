@@ -58,7 +58,7 @@
         <!-- Блок слоган о поддержке -->
         <article class="donate-theme">
           <h2 class="donate-theme__slogan">Чтобы поддержать Международный васюкинский турнир
-            <img class="donate-theme__image-int not-visible"
+            <img class="donate-theme__image-int"
               src="./images/many_chees_players_tournament_old_black_and_white_photo_seed-0ts-1705919932_idx-0 1.jpg"
               alt="Шахматная партия" />
             посетите лекцию на тему:
@@ -101,51 +101,53 @@
         </section>
         <!-- Блок цели -->
         <section class="dream">
+          <img class="dream__list-image" src="./images/planer.svg" alt="Самолет" />
           <h2 class="dream__title">Этапы преображения Васюков
             <span class="dream__title_add">
               Будущие источники обогащения васюкинцев
             </span>
           </h2>
-          <ol class="dream__list">
-            <li class="dream__list-item dream__area-item1">
-              <p class="dream__list-item-text">
-                Строительство железнодорожной магистрали Москва-Васюки
-              </p>
-            </li>
-            <li class="dream__list-item dream__area-item2">
-              <p class="dream__list-item-text">
-                Открытие фешенебельной гостиницы «Проходная пешка» и других небоскрёбов
-              </p>
-            </li>
-            <li class="dream__list-item dream__area-item3">
-              <p class="dream__list-item-text">
-                Поднятие сельского хозяйства в радиусе на тысячу километров: производство овощей, фруктов, икры,
-                шоколадных конфет
-              </p>
-            </li>
-            <li class="dream__list-item dream__area-item4">
-              <p class="dream__list-item-text">
-                Строительство дворца для турнира
-              </p>
-            </li>
-            <li class="dream__list-item dream__area-item5">
-              <p class="dream__list-item-text">
-                Размещение гаражей для гостевого автотранспорта
-              </p>
-            </li>
-            <li class="dream__list-item dream__area-item6">
-              <p class="dream__list-item-text">
-                Постройка сверхмощной радиостанции для передачи всему миру сенсационных результатов
-              </p>
-            </li>
-            <li class="dream__list-item dream__area-item7">
-              <p class="dream__list-item-text dream__list-item-text_max-width">
-                Создание аэропорта «Большие Васюки» с регулярным отправлением почтовых самолётов и дирижаблей во все
-                концы света, включая Лос-Анжелос и Мельбурн
-              </p>
-              <img class="dream__list-image" src="./images/planer.svg" alt="Самолет" />
-            </li>
-          </ol>
+          <div class="dream__list-wrapper">
+            <ol class="dream__list">
+              <li class="dream__list-item dream__area-item1">
+                <p class="dream__list-item-text">
+                  Строительство железнодорожной магистрали Москва-Васюки
+                </p>
+              </li>
+              <li class="dream__list-item dream__area-item2">
+                <p class="dream__list-item-text">
+                  Открытие фешенебельной гостиницы «Проходная пешка» и других небоскрёбов
+                </p>
+              </li>
+              <li class="dream__list-item dream__area-item3">
+                <p class="dream__list-item-text">
+                  Поднятие сельского хозяйства в радиусе на тысячу километров: производство овощей, фруктов, икры,
+                  шоколадных конфет
+                </p>
+              </li>
+              <li class="dream__list-item dream__area-item4">
+                <p class="dream__list-item-text">
+                  Строительство дворца для турнира
+                </p>
+              </li>
+              <li class="dream__list-item dream__area-item5">
+                <p class="dream__list-item-text">
+                  Размещение гаражей для гостевого автотранспорта
+                </p>
+              </li>
+              <li class="dream__list-item dream__area-item6">
+                <p class="dream__list-item-text">
+                  Постройка сверхмощной радиостанции для передачи всему миру сенсационных результатов
+                </p>
+              </li>
+              <li class="dream__list-item dream__area-item7">
+                <p class="dream__list-item-text dream__list-item-text_max-width">
+                  Создание аэропорта «Большие Васюки» с регулярным отправлением почтовых самолётов и дирижаблей во все
+                  концы света, включая Лос-Анжелос и Мельбурн
+                </p>
+              </li>
+            </ol>
+          </div>
         </section>
         <!-- Блок участники -->
         <section class="players">
@@ -215,7 +217,6 @@
 
   <script type="module" src="./scripts/runnig-line.js"></script>
   <script type="module" src="./scripts/players-slider.js"></script>
-  <script type="module" src="./scripts/common.js"></script>
 </body>
 
 </html>
