@@ -18,3 +18,62 @@
 .carousel__btn-less {
   transform: rotate(180deg);
 }
+
+.carousel__wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel__players {
+  display: flex;
+  list-style: none;
+}
+
+.players-block__list {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+.player {
+  width: 394px;
+  height: 462px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.player__image {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+.player__info {
+  margin: 28px 0 20px;
+}
+
+.player__name {
+  color: var(--color-text-main);
+  font: 600 24px/29px 'Golos Text';
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.player__title {
+  color: var(--color-text-main);
+  font: 400 20px/24px 'Golos Text';
+  text-align: center;
+}
+
+.player__btn {
+  width: 113px;
+  height: 35px;
+  background-color: transparent;
+  border: 1px solid var(--color-footnotes);
+  border-radius: 62px;
+  color: var(--color-footnotes);
+  font: 500 16kpx/19px 'Golos Text';
+}

@@ -152,9 +152,14 @@
           <div class="carousel">
             <div class="carousel-counter">
               <button class="carousel__btn carousel__btn-less"></button>
-              <button class="carousel__btn"></button>
+              <button class="carousel__btn carousel__btn-more"></button>
             </div>
+            <!-- Карусель участников -->
+            <div class="carousel__wrapper">
+              <ul class="carousel__players">
 
+              </ul>
+            </div>
           </div>
         </section>
 
@@ -177,6 +182,28 @@
       </p>
     </footer>
   </div>
+
+  <!-- Шаблон карточки player -->
+  <template id="playerTemplate">
+    <li class="players__item">
+      <article class="player">
+        <img class="player__image" src="#" alt="">
+        <div class="player__info">
+          <h2 class="player__name"></h2>
+          <p class="player__title"></p>
+        </div>
+        <button class="player__btn">Подробнее</button>
+      </article>
+    </li>
+  </template>
+  <!-- Шаблон блока с участниками -->
+  <template id="playersBlockTemplate">
+    <li class="players-block__item">
+      <ul class="players-block__list">
+
+      </ul>
+    </li>
+  </template>
 
   <script type="module" src="./scripts/runnig-line.js"></script>
   <script type="module" src="./scripts/players-slider.js"></script>
