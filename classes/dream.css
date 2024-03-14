@@ -14,6 +14,7 @@
 .dream__title_add {
   display: inline-block;
   width: 280px;
+  padding-left: 6px;
   color: var(--color-footnotes);
   text-transform: none;
   font: 400 20px/24px 'Golos Text';
@@ -33,6 +34,7 @@
 
 .dream__list-item {
   position: relative;
+  min-height: 112px;
   padding: 20px 20px 20px 72px;
   background-image: url(../images/header/background.svg);
   background-color: var(--color-bg-main);

@@ -26,6 +26,10 @@
   box-sizing: border-box;
 }
 
+.not-visible {
+  display: none;
+}
+
 .align-left {
   text-align: left;
 }
@@ -50,4 +54,21 @@
   margin: 80px 0 50px;
   padding: 0 72px;
   width: 1623.5px;
+}
+
+@media screen and (max-width: 1366px) {
+  .content {
+    width: 100%;
+  }
+
+  .main__content {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .main__content {
+    margin: 48px 0 34px;
+    padding: 0 19px;
+  }
 }

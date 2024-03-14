@@ -21,3 +21,31 @@
   width: 394px;
   object-fit: contain;
 }
+
+@media screen and (max-width: 1366px) {
+  .donate-theme {
+    margin-bottom: 34px;
+  }
+
+  .donate-theme__slogan {
+    letter-spacing: -0.5px;
+  }
+
+  .donate-theme__slogan_red {
+    letter-spacing: 0;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .donate-theme__image-int {
+    border-radius: 50%;
+    width: 335px;
+    margin: 24px 0;
+    object-fit: contain;
+  }
+
+  .donate-theme__slogan {
+    max-width: 100%;
+    font: 400 28px/38px 'Merriweather';
+  }
+}

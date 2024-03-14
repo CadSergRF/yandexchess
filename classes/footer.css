@@ -9,3 +9,10 @@
   color: var(--color-text-main);
   font: 400 16px/19px 'Golos Text';
 }
+
+@media screen and (max-width: 1366px) {
+  .footer {
+    width: 100%;
+    min-width: 200px;
+  }
+}

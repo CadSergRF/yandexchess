@@ -5,8 +5,15 @@
   margin-bottom: 200px;
 }
 
+.schedule__image-wrapper {
+  position: relative;
+  min-width: 490px;
+}
 .schedule__image {
-  width: 609px;
+  max-width: 530px;
+  position: absolute;
+  top: 0;
+  left: -28px;
 }
 
 .schedule__article {
@@ -45,7 +52,7 @@
 
 .schedule__table-text_line-though {
   text-decoration: line-through 2px var(--color-alm-red);
-  margin-right: 14px;
+  margin-right: 6px;
 }
 
 .schedule__table-text:nth-child(2n) {
@@ -65,4 +72,14 @@
 .schedule__footnotes {
   color: var(--color-footnotes);
   font: 400 20px/24px 'Golos Text';
+}
+
+@media screen and (max-width: 1366px) {
+  .schedule {
+    gap: 28px;
+  }
+
+  .schedule__table {
+    width: 609px;
+  }
 }

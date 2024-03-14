@@ -21,7 +21,7 @@
           </h2>
           <h2 class="header__slogan align-center">в столицу</h2>
           <h2 class="header__slogan align-right">земного шара</h2>
-          <p class="header__text align-center">Оплатите взнос на телеграммы для организации
+          <p class="header__text">Оплатите взнос на телеграммы для организации
             Международного васюкинского турнира по
             шахматам</p>
         </article>
@@ -57,7 +57,11 @@
       <section class="main__content">
         <!-- Блок слоган о поддержке -->
         <article class="donate-theme">
-          <h2 class="donate-theme__slogan">Чтобы поддержать Международный васюкинский турнир посетите лекцию на тему:
+          <h2 class="donate-theme__slogan">Чтобы поддержать Международный васюкинский турнир
+            <img class="donate-theme__image-int not-visible"
+              src="./images/many_chees_players_tournament_old_black_and_white_photo_seed-0ts-1705919932_idx-0 1.jpg"
+              alt="Шахматная партия" />
+            посетите лекцию на тему:
             <span class="donate-theme__slogan_red">«Плодотворная дебютная идея»</span>
           </h2>
           <img class="donate-theme__image"
@@ -66,7 +70,9 @@
         </article>
         <!-- Блок график проведения турнира -->
         <section class="schedule">
-          <img class="schedule__image" src="./images/chess-grandmaster.png" alt="Гроссмейстер" />
+          <div class="schedule__image-wrapper">
+            <img class="schedule__image" src="./images/chess-grandmaster.png" alt="Гроссмейстер" />
+          </div>
           <article class="schedule__article">
             <h2 class="schedule__title">
               и Сеанс <span class="schedule__title_red">одновременной игры в шахматы на 160 досках</span>
@@ -209,6 +215,7 @@
 
   <script type="module" src="./scripts/runnig-line.js"></script>
   <script type="module" src="./scripts/players-slider.js"></script>
+  <script type="module" src="./scripts/common.js"></script>
 </body>
 
 </html>
