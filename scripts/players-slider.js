@@ -29,7 +29,7 @@ const createPlayer = (card) => {
 let wrapperWidth = wrapper.clientWidth;
 // Ширина карточки участника
 let cardWidth
-if (window.screen.width < 450) {
+if (window.innerWidth > 450) {
   cardWidth = 394;
 } else {
   cardWidth = 300;

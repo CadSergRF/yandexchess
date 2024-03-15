@@ -48,7 +48,7 @@
 }
 
 .dream__list-item-text_max-width {
-  max-width: 440px;
+  max-width: 415px;
 }
 
 .dream__area-item1 {
@@ -102,7 +102,12 @@
 .dream__list-image {
   position: absolute;
   bottom: 0;
-  left: -60px;
+  left: 870px;
+  z-index: 10;
+}
+
+.dream__list-control {
+  display: none;
 }
 
 @media screen and (max-width: 375px) {
@@ -126,16 +131,21 @@
   }
 
   .dream__list-wrapper {
-    width: 335px;
+    width: 320px;
+    min-height: 300px;
+    padding: 62px 20px 34px;
     overflow: hidden;
+    background-image: url(../images/header/background.png);
+    background-color: var(--color-bg-main);
+    background-blend-mode: color-burn;
   }
 
   .dream__list {
     list-style-type: none;
     counter-reset: num;
     display: grid;
-    width: 1752px;
-    gap: 0 38px;
+    width: 1600px;
+    gap: 0;
     grid-template-columns: repeat(5, 320px);
     grid-template-areas:
       'one three four six seven'
@@ -145,15 +155,15 @@
   .dream__list-item {
     position: relative;
     min-height: 112px;
-    padding: 20px 20px 20px 72px;
-    background-image: url(../images/header/background.png);
-    background-color: var(--color-bg-main);
-    background-blend-mode: color-burn;
+    padding: 0;
+    padding-left: 50px;
+    background: none;
   }
 
   .dream__list-item-text {
     color: var(--color-text-main);
     font: 500 18px/21px 'Golos Text';
+    width: 230px;
   }
 
   .dream__list-item-text_max-width {
@@ -167,8 +177,8 @@
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: 16px;
-    left: 18px;
+    top: 0;
+    left: 0;
     width: 36px;
     height: 36px;
     background: var(--color-white);
@@ -182,8 +192,53 @@
   .dream__list-image {
     width: 335px;
     height: 182px;
-    bottom: 233px;
+    bottom: 320px;
     left: 10px;
     z-index: 10;
+  }
+
+  .dream__list-control {
+    margin-top: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .list-control__btn {
+    width: 36px;
+    height: 36px;
+    border: none;
+    border-radius: 50%;
+    background: var(--color-text-main) url(../images/btn-right.svg) center no-repeat;
+    cursor: pointer;
+  }
+
+  .list-control__btn:hover {
+    background-color: var(--color-sun);
+  }
+
+  .list-control__btn:disabled {
+    background-color: var(--color-disabled);
+    cursor: default;
+  }
+
+  .list-control__btn-less {
+    transform: rotate(180deg);
+  }
+
+  .list-control__items {
+    margin: 0 16px;
+    width: 74px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .list-control__item {
+    width: 10px;
+    height: 10px;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--color-disabled-second);
+    cursor: pointer;
   }
 }
