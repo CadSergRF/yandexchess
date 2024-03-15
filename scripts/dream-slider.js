@@ -66,9 +66,11 @@ const fillControl = (itemIndex) => {
 const handleDisableBtn = (elem) => {
   if (elem === 1) {
     lessBtn.disabled = true;
+    moreBtn.disabled = false;
     dreamList.style.transform = 'translateX(-0%)';
   } else if (elem === maxCountWindow) {
     moreBtn.disabled = true;
+    lessBtn.disabled = false;
   } else {
     lessBtn.disabled = false;
     moreBtn.disabled = false;
