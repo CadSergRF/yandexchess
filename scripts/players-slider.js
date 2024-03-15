@@ -120,4 +120,28 @@ lessBtnElem.onclick = function () {
   }
 }
 
+setInterval(() => {
+  if (numCardsDiv === 1) {
+    lessBtnElem.disabled = true;
+    moreBtnElem.disabled = false;
+    currentCountCardsElem.textContent = `${cardsViewed}`;
+    // ЕСЛИ ПЕРВЫЙ ЭЛЕМЕНТ ТО НЕ СДВИГАЕМ
+    carousel.style.transform = 'translateX(-0%)';
+    numCardsDiv++;
+  } else if (numCardsDiv === countDivCards) {
+    currentCountCardsElem.textContent = `${players.length}`;
+    lessBtnElem.disabled = false;
+    moreBtnElem.disabled = true;
+    carousel.style.transform = `translateX(-${oneDivPercent * (numCardsDiv - 1)}%)`;
+    numCardsDiv = 1;
+  } else {
+    lessBtnElem.disabled = false;
+    moreBtnElem.disabled = false;
+    // Сдвигаем карусель
+    carousel.style.transform = `translateX(-${oneDivPercent * (numCardsDiv - 1)}%)`;
+    currentCountCardsElem.textContent = `${numCardsDiv * cardsViewed}`;
+    numCardsDiv++;
+  }
 
+
+}, 4000)
